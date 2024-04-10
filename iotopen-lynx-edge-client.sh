@@ -25,6 +25,10 @@ sudo apt install -y mosquitto mosquitto-clients iotopen-rt iotopen-edge schedule
 # Optionally install the zwave daemon
 # sudo apt install zwaved
 
+mkdir -p /etc/iot-open
+mkdir -p /var/lib/iot-open/edge/apps
+mkdir -p /var/lib/iot-open/edge/configs
+
 if [ ! -e /etc/iot-open/iotopen.json ]; then
 	cat << __END__
 +--------------------------------------------------------------------------------------+
